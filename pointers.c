@@ -28,6 +28,8 @@ float* ptrtoe = &e;
 
 printf("The value of e is %f  The address of e is %f\n", e, ptrtoe);
 
+ptrtod* =d;
+ptrtoe*  =e;
 
 ptrtoe*
 
