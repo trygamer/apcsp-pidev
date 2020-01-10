@@ -3,38 +3,25 @@
 
 
 
-int main()
+
+int arrayAdd(int* arr, int s, int n)
 {
-  // create an int array 5 long
-  int arr[5];
   
-  for (int i = 0; i < 5; i++)
-  {
-    arr[i] = i * i;
-printf("%d\n",arr[i])
-  }
+  for(int i = 0; i<s+1;i++){
+    arr[i]=i*n; 
+    printf("function running %d\n",arr[i]);
 
-  printf("1st and 3rd vals: %d, %d\n", arr[0], arr[2]);
-  
-  printf("Or %d, %d\n", *arr, *(arr+2));
-
-  
-  // create array to hold intialized values
-  int arr2[] = { 1, 2, 3, 4 };
-  for (int i = 0; i < 4; i++)
-  {
-    printf("%d, ", arr2[i]);
   }
-  printf("\n");
-  
 }
 
-int arrayAdd(int arr[], int s, int n)
+int main()
 {
-  int arr[s];
-  for(int i = 0; i<s+1;i++){
-   arr[i]=i*5; 
-
+int arr[100];
+  for(int i=0;i<100;i++)
+  {
+  arr[i]=i*i;
   }
-  return arr
+  printf("index 4: %d index 8: %d\n", arr[4],arr[8]);
+  arrayAdd(arr,50,10);
+  return 0;
 }
