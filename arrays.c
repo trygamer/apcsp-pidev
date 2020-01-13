@@ -10,7 +10,7 @@
 
 
 
-int arrayAdd(int* arr, int s, int n)
+void arrayAdd(int* arr, int s, int n)
 
 {
 
@@ -20,8 +20,7 @@ int arrayAdd(int* arr, int s, int n)
 
     arr[i]=i*n; 
 
-    printf("function running %d\n",arr[i]);
-
+  
 
 
   }
@@ -45,9 +44,12 @@ int arr[100];
   }
 
   printf("For first Assignment index 4: %d index 8: %d\n", arr[4],arr[8]);
-printf("this is a test for the function");
+
   arrayAdd(arr,50,10);
-  printf("done");
+  
+  printf("Testing Array Function with incremenent 10 index 4: %d index 8: %d\n",arr[4],arr[8]); 
+  
+  
 
   return 0;
 
