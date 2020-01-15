@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+ char input[300];
+
+ int fint;
+ int sint;
+ char action;
+printf("Welcome to Calc&Stor\n");
+printf("Please type two integers\n");
+printf("first input:/n");
+fgets(input ,300, stdin);
+sscanf(input, "%d", &fint);
+printf("second input:/n");
+fgets(input ,300, stdin);
+sscanf(input, "%d", &sint);
+printf("Would you like to add/subtract/divide/multiple the ints %d and %d/n", fint,sint);
+fgets(input, 300, stdin);
+sscanf(input, "%s",&action );
+  if (strcmp(&action, "add") == 0){
+   int ans =fint +sint;
+
+   printf("The answer is %d/n",ans);
+
+
+  }
+
+
+
+
+}
+
+
+
+
+
